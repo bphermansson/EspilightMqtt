@@ -1,5 +1,7 @@
 /*
- https://github.com/puuu/espilight
+ * https://github.com/bphermansson/EspilightMqtt
+ * https://github.com/puuu/espilight
+ * https://pilight.org/
 */
 
 #include <ESPiLight.h>
@@ -17,7 +19,7 @@ WiFiClient espClient;
 PubSubClient client(espClient);
 
 // Rf transmitter and receiver
-#define RECEIVER_PIN 4 //any intterupt able pin
+#define RECEIVER_PIN 2 //any interupt able pin
 #define TRANSMITTER_PIN 13
 ESPiLight rf(TRANSMITTER_PIN);  //use -1 to disable transmitter
 
